@@ -1,0 +1,149 @@
+body {
+  margin: -16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+p {
+  font-size: 1.5rem;
+}
+
+.container > div h2 {
+  text-align: center;
+}
+.container {
+  color: rgb(117, 116, 116);
+
+  /* background-color: rgb(243, 243, 243); */
+
+  padding: 16px;
+}
+
+.intro {
+  margin: -16px;
+  background-color: rgb(168, 166, 166);
+  padding: 16px;
+  text-align: center;
+  color: aliceblue;
+}
+.intro img {
+  padding: 16px;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+}
+.qualification {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.hobbies {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.tech {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.tech ul li {
+  padding: 0.55rem;
+}
+.about {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.Project {
+  height: 40%;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.Project h2 {
+  font-size: 2.5rem;
+}
+a:hover {
+  color: rgb(53, 228, 228);
+}
+a {
+  text-decoration: none;
+}
+.social img {
+  text-decoration: none;
+  height: 5rem;
+  width: 5rem;
+  padding: 1.5rem;
+  margin: auto 16px;
+}
+table {
+  font-size: 1.5rem;
+  height: 90vh;
+  width: 100%;
+}
+table,
+th {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+table,
+tr,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 1.5rem;
+}
+
+.blue {
+  font-size: 1.5rem;
+  color: rgb(94, 134, 255);
+}
+.contact {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  margin: auto;
+  color: white;
+  /* background-color: rgb(255, 244, 228); */
+  background-position: center;
+  background-size: cover;
+  border-radius: 33px;
+}
+#formval {
+  /* background-image: url(https://images.pexels.com/photos/5015227/pexels-photo-5015227.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load); */
+  /* background-color: rgb(255, 255, 255); */
+  color: white;
+  border: 1px solid;
+  margin: auto;
+  padding: 3rem;
+  border-radius: 25%;
+}
+form#formval input,
+textarea,
+button {
+  border: 0.4px solid;
+  background-color: rgb(243, 243, 243);
+  border-radius: 11px;
+  margin: 0.5rem;
+  width: 100%;
+}
+form#formval input {
+  height: 1.5rem;
+}
+button {
+  border-radius: 16px;
+  height: 2rem;
+  background-color: rgb(232, 253, 253);
+  border: 1px solid;
+}
+form#formval,
+label {
+  font-weight: 600;
+  color: rgb(124, 124, 124);
+  display: block;
+}
+
+#formval button:hover {
+  background-color: rgb(206, 238, 238);
+}
+
+#formval input:hover,
+textarea:hover {
+  background-color: white;
+}
