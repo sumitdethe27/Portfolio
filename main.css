@@ -1,13 +1,45 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   position: absolute;
   margin: -16px;
   font-family: Arial, Helvetica, sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
+header {
+  /* background-color: antiquewhite; */
+  position: sticky;
+  top: 0;
+  padding: 16px;
+  /* background-color: rgb(243, 243, 243); */
+
+  width: 100%;
+  margin-bottom: 16px;
+  border-bottom: 1px solid;
+}
+
+header > nav > a {
+  width: 100%;
+  color: rgb(99, 144, 228);
+  margin: 16px;
+}
+
+header > nav > a:hover {
+  padding: 8px;
+  background-color: gray;
+  border-radius: 25%;
+  font-size: 1rem;
+  margin: 16px;
+}
+
 p {
   font-size: 1.5rem;
 }
 
-.container > div h2 {
+.container > section h2 {
   text-align: center;
 }
 .container {
@@ -63,7 +95,7 @@ p {
   font-size: 2.5rem;
 }
 a:hover {
-  color: rgb(53, 228, 228);
+  color: rgb(149, 213, 238);
 }
 a {
   text-decoration: none;
@@ -116,14 +148,14 @@ td {
   border: 1px solid;
   margin: auto;
   padding: 3rem;
-  border-radius: 25%;
+  border-radius: 5%;
 }
 form#formval input,
 textarea,
 button {
   border: 0.4px solid;
   background-color: rgb(243, 243, 243);
-  border-radius: 11px;
+  border-radius: 5px;
   margin: 0.5rem;
   width: 100%;
 }
@@ -131,7 +163,7 @@ form#formval input {
   height: 1.5rem;
 }
 button {
-  border-radius: 16px;
+  border-radius: 6px;
   height: 2rem;
   background-color: rgb(232, 253, 253);
   border: 1px solid;
@@ -150,4 +182,13 @@ label {
 #formval input:hover,
 textarea:hover {
   background-color: white;
+}
+#formval {
+  margin-top: 16px;
+}
+footer {
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-top: 4px solid;
 }

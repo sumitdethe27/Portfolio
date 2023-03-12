@@ -9,9 +9,22 @@
 <link rel="stylesheet" href="main.css">
 
 <body>
-    <div class="container">
+    <header>
+<nav >
+
+    <a href="#about">About Me</a>
+    <a href="#qualification">Qualifications</a>
+    <a  href="#tech">Skills</a>
+    <a href="#Project">Projects</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+    
+</nav>
+    </header>
+    
+    <main class="container">
         
-       <div class="intro">
+       <article class="intro">
             <img  src="https://media.licdn.com/dms/image/D4D03AQFEjzU7cWcI5w/profile-displayphoto-shrink_800_800/0/1674732415734?e=1683158400&v=beta&t=fXLOtwoqwMaDkPkUDowttThbsrRtFzryzf-kiF6wJr4" alt="">
            
             <h1>Hi, I'm Sumit</h1>
@@ -24,31 +37,31 @@
     
             <a  target="_blank" href="https://twitter.com/SumitDethe6"><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt=""></a>
         </p>
-         </div>
+       </article>
         
 
-        <div class="about">
+        <section class="about" id="about">
     <h2>About Me</h2>
     <p>Organized Graduate Engineer Trainee with a commitment to excellence and integration with intuitive problem-solving
         skills. Proficient in PYTHON, JAVA, DSA, HTML, CSS, JAVASCRIPT, MYSQL, and Computer Networks. Passionate about implementing and launching
         new projects and adding value to the company. Looking forward to start my career as a Software Engineer.</p>
     
-        </div>
-        <div class="qualification">
+        </section>
+        <section id="qualification" class="qualification">
         <h2>Qualifications</h2>
         <ol>
             <li>B.E. Mechanical Engineering</li>
             <li>ICSE 12th Board</li>
             
         </ol>
-        </div>
+        </section>
         
        
         
         
         
        
-        <div class="tech">
+        <section  class="tech" id="tech">
         <h2>Skills</h2>
         <ul>
             <li>Java </li>
@@ -58,9 +71,10 @@
             <li>COMPUTER NETWORKS </li>
             <li>HTML & CSS </li>
             <li>Spring boot</li>
-        </ul>    </div>
+        </ul>   
+        </section>
       
-        <div class="Project">
+        <section id="Project" class="Project" >
             <h2>Projects</h2>
             <table>
                 <th>Title</th>
@@ -114,38 +128,41 @@
             </table>
     
         
-    </div>
-    <div class="hobbies">
+        </section>
+    <section id="hobbies" class="hobbies">
         <h2>Hobbies</h2>
         <ul>
             <li>Chess</li>
             <li>Music</li>
             <li>Gaming</li>
         </ul>
-         </div>
+    </section>
 
-    <div class="contact">
+    <section class="contact" id="contact">
         
         <form id="formval" action=""><h2>Contact Me</h2>
-            <div>
+            <section>
 
                 <label for="name">Name : </label>
                 <input name="name" id="name" type="text" required  placeholder="Your Name">
-            </div>
-            <div >
+            </section>
+            <section >
                 <label for="email">E-mail : </label>
                 <input type="text" id="email" name="email" placeholder="xyz@abcmail.com">
                 
-            </div>
-            <div>
+            </section>
+            <section>
                 <label for="message">Message : </label>
                 <textarea name="message" id="message" cols="50" rows="5"></textarea>
                 
-            </div>
+            </section>
             <button type="submit">Submit</button>
             </form>
 
-    </div>
+        </main>
+        <footer>
+            2023©️ Sumit Dethe
+        </footer>
 
 
     <script src="main1.js"></script>
