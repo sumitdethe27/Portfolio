@@ -35,6 +35,6 @@ function clearletters(){
 
 }
 printletters(list[listindx])
-document.querySelector("button").addEventListener("click",()=>{
+document.querySelector("#send").addEventListener("click",()=>{
     alert("ThankYou ")
 })

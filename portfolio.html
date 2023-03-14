@@ -3,14 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
 </head>
 <link rel="stylesheet" href="main.css">
 
 <body>
+    <section class="menu-items">
+        <button id="close-menu">&times;</button>
+        <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#qualification">Qualifications</a></li>
+            <li><a  href="#tech">Skills</a></li>
+            <li><a href="#Project">Projects</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+            <li><a href="#contact">Contact</a></li>
+         
+            
+            
+        </ul>
+    </nav>
+    </section>
     <header>
-<nav >
+<nav id="nav" >
 
     <a href="#about">About Me</a>
     <a href="#qualification">Qualifications</a>
@@ -20,12 +37,16 @@
     <a href="#contact">Contact</a>
     
 </nav>
-    </header>
+<nav class="mobile-nav">
+<button id="menu">Menu</button>
+
+</nav>    
+</header>
     
     <main class="container">
         
        <article class="intro">
-            <img  src="https://media.licdn.com/dms/image/D4D03AQFEjzU7cWcI5w/profile-displayphoto-shrink_800_800/0/1674732415734?e=1683158400&v=beta&t=fXLOtwoqwMaDkPkUDowttThbsrRtFzryzf-kiF6wJr4" alt="">
+            <img id="profile-img" src="https://media.licdn.com/dms/image/D4D03AQFEjzU7cWcI5w/profile-displayphoto-shrink_800_800/0/1674732415734?e=1683158400&v=beta&t=fXLOtwoqwMaDkPkUDowttThbsrRtFzryzf-kiF6wJr4" alt="">
            
             <h1>Hi, I'm Sumit</h1>
             <p id="para">I am <span class="blue" id="typewriter" ></span></p>
@@ -65,11 +86,12 @@
         <h2>Skills</h2>
         <ul>
             <li>Java </li>
-            <li>Python </li>
             <li>Data Structures & Algorithms </li>
+            <li>Python </li>
+            <li>Javascript</li>
+            <li>HTML & CSS </li>
             <li>MySql</li>
             <li>COMPUTER NETWORKS </li>
-            <li>HTML & CSS </li>
             <li>Spring boot</li>
         </ul>   
         </section>
@@ -156,7 +178,7 @@
                 <textarea name="message" id="message" cols="50" rows="5"></textarea>
                 
             </section>
-            <button type="submit">Submit</button>
+            <button id="send" type="submit">Submit</button>
             </form>
 
         </main>
@@ -164,7 +186,7 @@
             2023©️ Sumit Dethe
         </footer>
 
-
+        <script src="menu.js"></script>
     <script src="main1.js"></script>
 </body>
 </html>
