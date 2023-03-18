@@ -46,6 +46,7 @@ header > nav > a:hover {
     top: 0;
     z-index: 1;
     background-color: rgb(247, 247, 247);
+    transition: height 0.5s ease-in-out;
   }
   section button#close-menu {
     position: absolute;
@@ -146,9 +147,14 @@ a {
   text-decoration: none;
 }
 .social img {
-  height: 35px;
-  width: 35px;
+  height: 40px;
+  width: 40px;
   margin: auto 16px;
+  transition: transform 0.2s 0.2s ease-in;
+}
+.social a > img:hover {
+  transform: scale(1.2, 1.2);
+  transform: rotate(30deg);
 }
 
 .blue {
@@ -197,7 +203,7 @@ form#formval input {
 form#formval,
 label {
   font-weight: 600;
-  color: rgb(124, 124, 124);
+  color: rgb(88, 88, 88);
   display: block;
 }
 
