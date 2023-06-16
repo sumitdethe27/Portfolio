@@ -1,6 +1,8 @@
 
 
   document.addEventListener("DOMContentLoaded",function(){
+    let head=document.querySelector("header");
+    let ogdisplay=head.style.display
     
    function showcontent(){
       
@@ -10,6 +12,12 @@
 
             contentvisible=true;
 
+          const head=document.querySelector("header");
+          if(head.style.display==='none'){
+            head.style.display=ogdisplay
+          }else{
+            head.style.display='none'
+          }
         
     }
    
@@ -20,7 +28,11 @@
         
             menu.style.height="0"
             
-
+            if(head.style.display==='none'){
+              head.style.display=ogdisplay
+            }else{
+              head.style.display='none'
+            }
         
     }
     function close(){

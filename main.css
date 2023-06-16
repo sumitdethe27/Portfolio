@@ -1,9 +1,22 @@
 html {
   scroll-behavior: smooth;
 }
+:root {
+  --background-color: hsl(230deg, 85%, 100%);
+
+  --text-color: hsl(230deg, 10%, 5%);
+  --intro-color: hsl(240deg, 0%, 85%);
+  --font-small: 0.5rem;
+  --font-regular: 1rem;
+  --font-large: 1.5rem;
+  --font-xl: 2rem;
+}
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: var(--font-regular);
 }
 * {
   box-sizing: border-box;
@@ -13,15 +26,14 @@ header {
   top: 0;
   z-index: 55;
   padding: 16px;
-  background: hsl(0, 0%, 100%);
+  background: var(--background-color);
   width: 100%;
-  border: 1px solid white;
-  border-bottom: 2px solid;
 }
 
 header > nav > a {
-  color: rgb(99, 144, 228);
+  color: inherit;
   margin: 16px;
+  font-size: var(--font-regular);
   text-decoration: none;
 }
 header > nav :first-child {
@@ -56,7 +68,7 @@ header > nav > a:hover {
     padding: 8px;
     border: none;
     background: transparent;
-    font-size: x-large;
+    font-size: var(--font-xl);
   }
   section.menu-items nav ul > li {
     list-style: none;
@@ -77,17 +89,16 @@ header > nav > a:hover {
   #menu {
     display: block;
 
-    background: transparent;
     border-radius: 8px;
     margin-left: auto;
+    padding: 5px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-color: var(--text-color);
   }
 }
 .menu-items {
   display: none;
-}
-
-p {
-  font-size: 1.5rem;
 }
 
 .container > section h2 {
@@ -101,11 +112,11 @@ p {
 }
 
 .intro {
-  background-color: rgb(168, 166, 166);
+  background-color: var(--intro-color);
   margin: -16px;
   text-align: center;
   padding: 16px;
-  color: white;
+  color: var(--text-color);
 }
 #profile-img {
   height: 400px;
@@ -178,7 +189,7 @@ a {
 #formval {
   /* background-image: url(https://images.pexels.com/photos/5015227/pexels-photo-5015227.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load); */
   /* background-color: rgb(255, 255, 255); */
-  color: white;
+  color: var(--text-color);
   border: 1px solid;
   margin: auto;
   padding: 3rem;
@@ -235,4 +246,12 @@ table,
 tr,
 td {
   border: 1px solid;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    --background-color: hsl(240deg, 80%, 9%);
+
+    --intro-color: hsl(240deg, 0%, 18%);
+    --text-color: hsl(230deg, 10%, 100%);
+  }
 }
