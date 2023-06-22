@@ -249,9 +249,9 @@ td {
 }
 @media (prefers-color-scheme: dark) {
   body {
-    --background-color: hsl(240deg, 80%, 9%);
+    --background-color: hsl(240deg, 80%, 12%);
 
-    --intro-color: hsl(240deg, 0%, 18%);
+    --intro-color: hsl(5deg, 0%, 25%);
     --text-color: hsl(230deg, 10%, 100%);
   }
 }
