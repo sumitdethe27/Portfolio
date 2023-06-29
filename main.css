@@ -31,10 +31,10 @@ header {
 }
 
 header > nav > a {
-  color: inherit;
   margin: 16px;
   font-size: var(--font-regular);
   text-decoration: none;
+  color: var(--text-color);
 }
 header > nav :first-child {
   margin-left: 8px;
@@ -56,10 +56,13 @@ header > nav > a:hover {
     width: 100%;
     display: revert;
     position: fixed;
+    font-size: var(--font-xl);
     top: 0;
+    color: var(--text-color);
     z-index: 1;
-    background-color: rgb(247, 247, 247);
+    background-color: var(--background-color);
     transition: height 0.5s ease-in-out;
+    padding-top: 60px;
   }
   section button#close-menu {
     position: absolute;
@@ -67,6 +70,7 @@ header > nav > a:hover {
     right: 25px;
     padding: 8px;
     border: none;
+    color: var(--text-color);
     background: transparent;
     font-size: var(--font-xl);
   }
@@ -75,7 +79,6 @@ header > nav > a:hover {
     margin: 16px;
     font-size: 2rem;
     padding: 16px;
-
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
   }
@@ -158,6 +161,7 @@ a:hover {
   text-decoration: underline;
 }
 a {
+  color: var(--text-color);
   text-decoration: none;
 }
 .social img {
@@ -180,7 +184,7 @@ a {
   align-items: center;
   padding: 1rem;
   margin: auto;
-  color: white;
+  color: var(--text-color);
   /* background-color: rgb(255, 244, 228); */
   background-position: center;
   background-size: cover;
@@ -199,7 +203,7 @@ form#formval input,
 textarea,
 #send {
   border: 0.4px solid;
-  background-color: rgb(243, 243, 243);
+  background-color: var(--text-color);
   border-radius: 5px;
   margin: 0.5rem;
   width: 100%;
@@ -216,7 +220,7 @@ form#formval input {
 form#formval,
 label {
   font-weight: 600;
-  color: rgb(88, 88, 88);
+  color: var(--text-color);
   display: block;
 }
 
@@ -224,10 +228,6 @@ label {
   background-color: rgb(206, 238, 238);
 }
 
-#formval input:hover,
-textarea:hover {
-  background-color: white;
-}
 #formval {
   margin-top: 16px;
 }
