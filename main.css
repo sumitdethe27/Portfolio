@@ -6,10 +6,14 @@ html {
 
   --text-color: hsl(230deg, 10%, 5%);
   --intro-color: hsl(240deg, 0%, 85%);
+  --secondary-color: hsl(240deg 80% 65%);
+  --shadow-color: hsl(35deg 100% 61% / 46%);
   --font-small: 0.5rem;
   --font-regular: 1rem;
   --font-large: 1.5rem;
   --font-xl: 2rem;
+  --input-color: hsl(230deg, 90%, 100%);
+  --spacing-regular: 1rem;
 }
 body {
   margin: 0px;
@@ -48,6 +52,9 @@ header > nav > a:hover {
 }
 .mobile-nav {
   display: none;
+}
+#para {
+  font-size: var(--font-large);
 }
 @media (max-width: 500px) {
   section.menu-items {
@@ -125,7 +132,7 @@ header > nav > a:hover {
   height: 400px;
   width: 400px;
 
-  filter: drop-shadow(5px -7px 10px black);
+  filter: drop-shadow(6px -10px 8px black);
   z-index: 3;
 }
 .qualification {
@@ -136,17 +143,41 @@ header > nav > a:hover {
   padding: 1rem;
   font-size: 1.5rem;
 }
-.tech {
-  padding: 1rem;
-  font-size: 1.5rem;
+section#tech.tech {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: var(--spacing-regular);
 }
-.tech ul li {
-  padding: 0.55rem;
+.card ul {
+  font-size: var(--font-large);
+  padding: 0;
+  text-align: center;
+}
+.card ul li {
+  list-style: none;
+  text-align: center;
+}
+.card {
+  text-align: center;
+  border: 1px solid white;
+  padding: var(--spacing-regular);
+  width: 100%;
+  box-shadow: 3px 3px 6px 5px var(--shadow-color);
+}
+.card > header {
+  font-size: var(--font-large);
+  text-align: center;
+}
+#tech-head {
+  font-size: 2.5rem;
+  text-align: center;
 }
 .about {
   padding: 1rem;
   font-size: 1.5rem;
 }
+
 .Project {
   height: 40%;
   width: 100%;
@@ -176,7 +207,7 @@ a {
 
 .blue {
   font-size: 1.5rem;
-  color: rgb(94, 134, 255);
+  color: var(--secondary-color);
 }
 .contact {
   display: flex;
@@ -185,14 +216,11 @@ a {
   padding: 1rem;
   margin: auto;
   color: var(--text-color);
-  /* background-color: rgb(255, 244, 228); */
   background-position: center;
   background-size: cover;
   border-radius: 33px;
 }
 #formval {
-  /* background-image: url(https://images.pexels.com/photos/5015227/pexels-photo-5015227.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load); */
-  /* background-color: rgb(255, 255, 255); */
   color: var(--text-color);
   border: 1px solid;
   margin: auto;
@@ -203,7 +231,7 @@ form#formval input,
 textarea,
 #send {
   border: 0.4px solid;
-  background-color: var(--text-color);
+  /* background-color: var(--background-color); */
   border-radius: 5px;
   margin: 0.5rem;
   width: 100%;
@@ -250,7 +278,7 @@ td {
 @media (prefers-color-scheme: dark) {
   body {
     --background-color: hsl(240deg, 80%, 12%);
-
+    --shadow-color: hsl(240deg 80% 65%);
     --intro-color: hsl(5deg, 0%, 25%);
     --text-color: hsl(230deg, 10%, 100%);
   }
