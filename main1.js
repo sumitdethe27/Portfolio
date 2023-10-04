@@ -110,7 +110,7 @@ gsap.from(".proj-1", {
     opacity:0.5,
     scrollTrigger: {
         trigger: ".profile-img",
-        markers:true,
+        
         start: "top center", // Adjust start and end values for when you want the animation to begin and end
     //   end: "top 30%",
            
@@ -124,7 +124,6 @@ gsap.from(".proj-1", {
     duration:0.5,
     scrollTrigger: {
         trigger: ".about",
-        markers:true,
         animation:1,
         start: "top center", // Adjust start and end values for when you want the animation to begin and end
     //   end: "top 30%",
