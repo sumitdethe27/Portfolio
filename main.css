@@ -462,4 +462,7 @@ body.dark-theme{
     width: auto;
     min-width: auto;
   }
+  .proj{
+    gap: 3rem;
+  }
 }
