@@ -59,24 +59,22 @@ img.style.top=1- (e.y*0.02) + "px"
 })
 document.addEventListener("DOMContentLoaded",function(){
 
-//     gsap.from(".tiles-1",{
-//     scale:0.5,
-//     rotate: 180, // Initial rotation (in degrees)
-//     x: -100, // Initial horizontal translation
-//     y: 100, // Initial vertical translation
-//     opacity: 0, // Initial opacity        
-//     duration:0.5,
-//     ease: "power2.out", // Easing function
+    gsap.from(".card",{
+    scale:0.5,
+    rotate: 180, // Initial rotation (in degrees)
+    x: "-100%", // Initial horizontal translation
+    y: "-100%", // Initial vertical translation
+    opacity: 0,
+    ease: "ease-out", // Easing function
    
-//     scrollTrigger:{
-//         trigger:".tiles-1",
-//         scroll:"body",
-//         start:"top 90%",
-//         end:"top 80%",
-//         scrub:2,
-//         once:true
-//     }
-// })
+    scrollTrigger:{
+        trigger:".card",
+        scroll:"body",
+        start:"top 90%",
+        end:"top 80%",
+        
+    }
+})
 gsap.from(".proj-1", {
     y: window.scrollY * -0.5,
     x: "170%",

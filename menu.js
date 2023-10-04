@@ -1,17 +1,17 @@
 
 
-  document.addEventListener("DOMContentLoaded",function(){
-    let head=document.querySelector("header");
-    
+document.addEventListener("DOMContentLoaded",function(){
+  let head=document.querySelector("header");
      function showcontent(){
       
             const menu=document.querySelector(".menu-items");
             
             menu.style.height="100%"
+            
+            console.log(menu.style.height);
 
-          const head=document.querySelector("header");
           if(head.style.display==='none'){
-            head.style.display=ogdisplay;
+            head.style.display='flex';
             document.querySelector("#close-menu").style.display='none';
             
           }else{
@@ -27,10 +27,15 @@
         
             menu.style.height="0"
               
-              console.log(head.style.display);
            
-              head.style.display='block';
            
+          if(head.style.display==='none'){
+            head.style.display='flex';
+            document.querySelector("#close-menu").style.display='none';
+            
+          }else{
+            head.style.display='none'
+          }
     }
     function close(){
     const items=document.querySelectorAll("section.menu-items nav ul>li")
@@ -52,7 +57,7 @@
 
   const proj2=document.querySelector("#proj-2")
   proj2.addEventListener("click",function(){
-    console.log("hi")
+  
 
     window.open("https://github.com/sumitdethe27/Sneaker-Store","_blank")
   })

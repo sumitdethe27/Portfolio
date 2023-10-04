@@ -107,9 +107,8 @@ span#typewriter.blue{
   display: flex;
   flex-direction: column;
   gap: var(--font-large);
-  /* justify-content: center; */
- margin: auto;
- width: 350px;
+   margin: auto;
+ width: 450px;
  height: 500px;
 }
 #download {
@@ -171,12 +170,13 @@ span#typewriter.blue{
 }
 
 section#tech.tech {
+  
   overflow: visible;
   margin: var(--font-xl);
   display: flex;
   flex-wrap: wrap;
-
-  gap: var(--spacing-regular);
+  justify-content: center;
+  gap: var(--font-large);
 }
 .card ul {
   font-size: var(--font-large);
@@ -191,7 +191,7 @@ section#tech.tech {
   padding: var(--spacing-regular);
   border-radius: var(--spacing-regular);
   color: var(--text-color);
-  width: 100%;
+  min-width: 300px;
   text-align: center;
   box-shadow: 3px 3px 6px 5px var(--shadow-color);
   transition: transform 0.4s ease-in, box-shadow 0.3s ease-in;
@@ -205,11 +205,12 @@ section.card:hover {
   text-align: center;
 }
 #tech-head {
-  margin: 0 0 var(--spacing-regular) 0;
+  margin: 0 0 3rem 0;
   font-size: 2.5rem;
   text-align: center;
 }
 .tech-content{
+  margin-top: 5rem;
   padding: var(--spacing-regular);
 }
 .about {
@@ -305,7 +306,7 @@ a {
 .social{
   display: grid;
   grid-auto-flow: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 #formval h2{
   margin: var(--spacing-small);
@@ -359,9 +360,7 @@ margin-top: 3rem;
   text-align: center;
   border-top: 4px solid;
 }
-.menu-items{
-  display: none;
-}
+
 body.dark-theme{
   --background-color: hsl(240deg, 80%, 12%);
   --shadow-color: hsl(240deg 80% 65%);
@@ -377,6 +376,8 @@ body.dark-theme{
     --shadow-color: hsl(240deg 80% 65%);
     --intro-color: hsl(5deg, 0%, 25%);
     --text-color: hsl(230deg, 10%, 100%);
+    background-image: url(./img/bkg.jpg);
+    background-size: cover;
   }
   
   body.light-theme{
@@ -397,14 +398,22 @@ body.dark-theme{
     display:block;
     
   }
-
+  .tiles-1{
+  margin: 0;
+  display: block;
+  }
+  #landing-img{
+    display: none;
+  }
+  img#profile{
+    display: none;
+  }
   #menu{
     padding: var(--font-small);
     border-radius: var(--font-small);
     
   }
   .menu-items {
-    display: none;
     height: 0;
     width: 100%;
     overflow: hidden;
