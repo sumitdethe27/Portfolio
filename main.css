@@ -398,12 +398,19 @@ body.dark-theme{
     display:block;
     
   }
+  .intro{
+    display: block;
+  }
+  .intro-detail{
+    width: 100%;
+  }
+  
+    article.image-placeholder{
+      display: none;
+    }
   .tiles-1{
   margin: 0;
   display: block;
-  }
-  #landing-img{
-    display: none;
   }
   img#profile{
     display: none;
@@ -447,5 +454,9 @@ body.dark-theme{
     font-size: var(--font-xl);
   }
   
-  
+  .proj-1{
+    /* min-width: none; */
+    width: auto;
+    min-width: auto;
+  }
 }
