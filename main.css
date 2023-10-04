@@ -42,6 +42,9 @@ body {
   background: var(--background-color);
 }
 
+section.menu-items {/*  this is mobile nav*/
+display: none;
+}
 header > nav > a {
   margin: 16px;
   font-size: var(--font-regular);
@@ -63,7 +66,6 @@ header > nav > a:hover {
 }
 #para {
   margin: 0;
-  padding: var(--font-regular);
   font-size: var(--font-xl);
   font-weight: 700;
 }
@@ -420,7 +422,8 @@ body.dark-theme{
     border-radius: var(--font-small);
     
   }
-  .menu-items {
+  section.menu-items {
+   display: block;
     height: 0;
     width: 100%;
     overflow: hidden;

@@ -31,10 +31,10 @@ document.addEventListener("DOMContentLoaded",function(){
            
           if(head.style.display==='none'){
             head.style.display='flex';
-            document.querySelector("#close-menu").style.display='none';
             
           }else{
             head.style.display='none'
+            
           }
     }
     function close(){
