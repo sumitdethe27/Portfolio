@@ -190,6 +190,7 @@ section#tech.tech {
 .card {
   padding: var(--spacing-regular);
   border-radius: var(--spacing-regular);
+  color: var(--text-color);
   width: 100%;
   text-align: center;
   box-shadow: 3px 3px 6px 5px var(--shadow-color);
@@ -260,6 +261,8 @@ section.card:hover {
   justify-content: center;
   border-radius: var(--spacing-regular);
   box-shadow: 2px 2px 10px 5px hsl(243deg, 31%, 78%);
+  background-color: var(--background-color);
+  color: var(--text-color);
   cursor: pointer;
   transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
  }
