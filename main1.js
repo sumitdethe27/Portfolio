@@ -34,6 +34,17 @@ function clearletters(){
     }
 
 }
+let theme_changer=document.getElementById('theme-button')
+
+theme_changer.addEventListener('click',()=>{
+    theme_changer.addEventListener('click',()=>{
+        if(theme_changer.textContent==="Light"){
+            theme_changer.textContent="Dark"
+        }else{
+            theme_changer.textContent="Light";
+        }
+    })
+    })
 printletters(list[listindx])
 document.querySelector("#send").addEventListener("click",()=>{
     alert("ThankYou ")
@@ -48,15 +59,15 @@ document.addEventListener("scroll",()=>{
 
     }
 })
-let img=document.querySelector('#landing-img')
+// let img=document.querySelector('#landing-img')
 let main=document.querySelector('body')
-main.addEventListener('mousemove',function(e){
+// main.addEventListener('mousemove',function(e){
    
     
-img.style.left=1-(e.x*0.02) + "px"
-img.style.top=1- (e.y*0.02) + "px"
+// img.style.left=1-(e.x*0.02) + "px"
+// img.style.top=1- (e.y*0.02) + "px"
 
-})
+// })
 document.addEventListener("DOMContentLoaded",function(){
 
     gsap.from(".card",{

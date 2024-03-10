@@ -143,11 +143,12 @@ span#typewriter.blue{
  box-shadow: 2px 1px 3px 3px rgb(94, 89, 89); 
 }
 #landing-img {
-  height: 400px;
+  margin-top: 60px;
+  height: 300px;
   position: absolute;
   top: 0;
   left: 0;
-  width: 350px;
+  width: 620px;
   justify-self: end;
   filter: drop-shadow(6px -10px 8px black);
   z-index: 3;
@@ -361,6 +362,29 @@ margin-top: 3rem;
   font-size: var(--font-large);
   text-align: center;
   border-top: 4px solid;
+}
+#theme-button {
+  width: 80px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f0f0; /* Light gray background */
+  cursor: pointer;
+  outline: none; /* Remove outline on focus */
+}
+
+#theme-button:hover {
+  background-color: #e0e0e0; /* Lighter gray background on hover */
+}
+
+#theme-button > p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333; /* Dark text color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  line-height: 40px; /* Center text vertically */
+  text-align: center; /* Center text horizontally */
 }
 
 body.dark-theme{
